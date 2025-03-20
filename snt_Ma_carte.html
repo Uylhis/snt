@@ -93,6 +93,8 @@ c.save('maCarte.html')
 		<p>
 			Modifiez le programme du "À faire vous-même 2" pour qu'il génère une carte centrée sur la ville de votre choix (la longitude et la latitude d'une ville sont facilement trouvables sur le web, attention celles-ci doivent être décimales).
 		</p>
+	    	<p>	<a href="https://www.coordonnees-gps.fr/">Voici un site pour trouver des coordonnées décimales dans le monde entier</a>
+		</p>
 		<hr />
 		<p>
 			Il est possible d'obtenir un niveau de zoom différent en ajoutant un paramètre "zoom_start"
@@ -104,7 +106,7 @@ c.save('maCarte.html')
 		<pre><code class="python">
 import folium
 c= folium.Map(location=[46.166672, 1.86667],zoom_start=15)
-c.save('maCarte.html')
+c.save('maCarte4.html')
 		</code></pre>
 		<p>
 			Plus la valeur de "zoom_start" sera grande et plus le zoom sera important.
@@ -121,7 +123,7 @@ c.save('maCarte.html')
 import folium
 c= folium.Map(location=[46.166672, 1.86667],zoom_start=20)
 folium.Marker([46.168415, 1.856995].add_to(c)
-c.save('maCarte.html')
+c.save('maCarte5.html')
 		</code></pre>
 		<p>
 			Nous avons uniquement ajouté la ligne "folium.Marker...", il faut juste renseigner les coordonnées souhaitées (ici 46.168415 pour la latitude et 1.856995 pour la longitude)
@@ -141,7 +143,7 @@ c.save('maCarte.html')
 import folium
 c= folium.Map(location=[46.166672, 1.86667],zoom_start=16)
 folium.Marker([46.168415, 1.856995],popup="Lycée Jean Favard").add_to(c)
-c.save('maCarte.html')
+c.save('maCarte6.html')
 		</code></pre>
 		<p>
 			Il suffit de cliquer sur le marqueur pour que l'information définie par le paramètre "popup" apparaisse à l'écran (ici en cliquant sur le marqueur nous verrons donc apparaitre "Lycée Jean Favard").
@@ -151,12 +153,12 @@ c.save('maCarte.html')
 		<p>
 			En vous aidant de ce qui a été fait au "À faire vous-même 6", créez une carte et placez un marqueur à l'endroit de votre choix (n'oubliez pas de renseigner le paramètre "popup")
 		</p>
-	    <p>Enfin, vous enverrez votre dernière carte réalisée à votre enseignant via la messagerie de Mon Lycée Connecté</p>
+	    <p>Enfin, vous enverrez votre dernière carte réalisée et son code python correspondant  à votre enseignant via la messagerie de Mon Lycée Connecté</p>
 		<hr />
 	    
 		<img style="margin-bottom: 15px;" src="./img/cc.png"/ />
 		<p>
-			Auteur : David Roche
+			D'après David Roche
 		</p>
 		</div>
       <script src="highlight.pack.js"></script>
