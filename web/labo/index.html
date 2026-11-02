@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le labo HTTP – SNT Lycée Jean Favard</title>
+  <meta name="description" content="Envoyer des requêtes HTTP au serveur du site et observer ses réponses.">
+  <link rel="icon" type="image/svg+xml" href="../../images/icone-snt.svg">
+  <link rel="stylesheet" href="../../styles/style.css">
+</head>
+<body>
+  <header class="entete">
+    <a href="../../index.html"><img src="../../images/logo-lycee-snt.svg" alt="SNT – Lycée Jean Favard, retour à l'accueil"></a>
+    <a class="retour" href="../index.html">← Le Web</a>
+  </header>
+
+  <main class="contenu">
+
+    <div class="bandeau-theme">
+      <img src="../../images/theme-web.svg" alt="">
+      <div>
+        <h1>Le labo HTTP</h1>
+        <p>Votre navigateur (le client) dialogue avec le serveur qui héberge ce site. Ici, vous pouvez observer ce dialogue.</p>
+      </div>
+    </div>
+
+    <!-- 1. Ce que le client sait de lui-même : calculé par le navigateur, sans le serveur -->
+    <h2>1. Le client se présente</h2>
+    <div class="carte">
+      <p>Ces informations sont calculées <strong>par votre navigateur</strong>, sur votre ordinateur. Une partie est envoyée au serveur à chaque requête.</p>
+      <table class="entetes">
+        <tr><th>Heure de votre ordinateur</th><td id="heure-client">…</td></tr>
+        <tr><th>Identification du navigateur (User-Agent)</th><td id="agent">…</td></tr>
+        <tr><th>Langues acceptées (Accept-Language)</th><td id="langues">…</td></tr>
+      </table>
+    </div>
+
+    <!-- 2. Envoyer une requête HTTP au serveur du site et afficher sa réponse -->
+    <h2>2. Envoyer une requête HTTP</h2>
+    <div class="carte">
+      <p>Écrivez le <strong>chemin</strong> d'un fichier du site, à partir de sa racine (exemples : <code>index.html</code>, <code>web/index.html</code>, <code>styles/style.css</code>), puis envoyez la requête.</p>
+      <form id="formulaire" class="requete">
+        <label for="chemin">Chemin demandé :</label>
+        <span class="racine-site" id="racine">/</span>
+        <input id="chemin" type="text" value="web/index.html" autocomplete="off" spellcheck="false">
+        <button class="bouton" type="submit">Envoyer la requête</button>
+      </form>
+
+      <div id="resultat" hidden>
+        <h3>La requête envoyée par le client</h3>
+        <pre class="code" id="requete"></pre>
+
+        <h3>La réponse du serveur</h3>
+        <p class="statut" id="statut"></p>
+        <table class="entetes" id="entetes"></table>
+
+        <h3>Le contenu reçu</h3>
+        <div id="contenu"></div>
+      </div>
+    </div>
+
+    <!-- 3. L'énigme : un fichier que l'on ne trouve qu'en construisant son chemin -->
+    <h2>3. Le mystère du fichier caché</h2>
+    <div class="carte bonus">
+      <p>Un fichier secret a été déposé sur le serveur. Aucun lien n'y mène : il faut écrire son chemin soi-même.</p>
+      <ul>
+        <li>Il s'appelle <code>indice.html</code>.</li>
+        <li>Il est rangé dans un dossier nommé <code>enquete</code>.</li>
+        <li>Ce dossier se trouve dans le même dossier que la page que vous lisez en ce moment. Regardez bien son adresse !</li>
+      </ul>
+      <p>Envoyez la bonne requête dans le labo ci-dessus : le fichier vous donnera un code à recopier dans Éléa.</p>
+    </div>
+
+  </main>
+
+  <footer class="pied">Lycée Jean Favard – SNT, classes de seconde</footer>
+
+  <script>
+    // Explication des codes de statut HTTP les plus courants
+    const SENS = {
+      200: "OK : la ressource a été trouvée et envoyée",
+      301: "Déplacée définitivement",
+      304: "Non modifiée : le navigateur réutilise sa copie",
+      403: "Interdit",
+      404: "Not Found : la ressource demandée n'existe pas sur le serveur",
+      500: "Erreur interne du serveur"
+    };
+
+    // Racine du site : tout ce qui précède « web/labo/ » dans l'adresse de cette page
+    const racine = location.pathname.split("web/labo/")[0];
+    document.getElementById("racine").textContent = racine;
+
+    // Bloc 1 : informations calculées par le client
+    function afficherHeure() {
+      document.getElementById("heure-client").textContent = new Date().toLocaleString("fr-FR");
+    }
+    afficherHeure();
+    setInterval(afficherHeure, 1000);
+    document.getElementById("agent").textContent = navigator.userAgent;
+    document.getElementById("langues").textContent = (navigator.languages || [navigator.language]).join(", ");
+
+    // Échappe le texte pour l'afficher tel quel (sans que le navigateur l'interprète)
+    function brut(texte) {
+      return texte.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    // Bloc 2 : envoi de la requête et affichage de la réponse
+    document.getElementById("formulaire").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const chemin = document.getElementById("chemin").value.trim().replace(/^\/+/, "");
+      const url = new URL(racine + chemin, location.origin);
+
+      document.getElementById("requete").textContent =
+        "GET " + url.pathname + " HTTP/1.1\n" +
+        "Host: " + url.host + "\n" +
+        "User-Agent: " + navigator.userAgent + "\n" +
+        "Accept-Language: " + (navigator.languages || [navigator.language]).join(",");
+
+      const zoneStatut = document.getElementById("statut");
+      const zoneEntetes = document.getElementById("entetes");
+      const zoneContenu = document.getElementById("contenu");
+      document.getElementById("resultat").hidden = false;
+
+      let reponse;
+      try {
+        reponse = await fetch(url, { cache: "no-store" });
+      } catch (err) {
+        zoneStatut.textContent = "Pas de réponse : le serveur est injoignable.";
+        zoneStatut.className = "statut erreur";
+        zoneEntetes.innerHTML = "";
+        zoneContenu.innerHTML = "";
+        return;
+      }
+
+      // Code de statut et son sens
+      zoneStatut.textContent = "Code de statut : " + reponse.status + " (" + (SENS[reponse.status] || reponse.statusText || "") + ")";
+      zoneStatut.className = "statut " + (reponse.ok ? "ok" : "erreur");
+
+      // En-têtes de la réponse, avec une explication pour les principaux
+      const NOMS = {
+        "content-type": "type de contenu envoyé",
+        "content-length": "taille en octets",
+        "last-modified": "dernière modification du fichier",
+        "date": "date et heure du serveur",
+        "server": "nom du logiciel serveur"
+      };
+      let lignes = "<tr><th>En-tête</th><th>Valeur</th><th>Signification</th></tr>";
+      for (const nom of ["server", "date", "content-type", "content-length", "last-modified"]) {
+        const valeur = reponse.headers.get(nom);
+        if (valeur) lignes += "<tr><td><code>" + nom + "</code></td><td>" + brut(valeur) + "</td><td>" + NOMS[nom] + "</td></tr>";
+      }
+      zoneEntetes.innerHTML = lignes;
+
+      // Contenu reçu : une image est affichée, un texte (HTML, CSS…) est montré tel quel
+      const type = reponse.headers.get("content-type") || "";
+      if (type.startsWith("image/") && !type.includes("svg")) {
+        zoneContenu.innerHTML = '<p>Le serveur a envoyé une image :</p><img class="apercu-recu" src="' + url.href + '" alt="Image reçue">';
+      } else {
+        const texte = await reponse.text();
+        const debut = texte.split("\n").slice(0, 40).join("\n");
+        zoneContenu.innerHTML = "<p>Voici le code reçu par le navigateur (40 premières lignes). C'est ce code que le navigateur interprète pour afficher la page.</p>" +
+          '<pre class="code">' + brut(debut) + "</pre>";
+      }
+    });
+  </script>
+</body>
+</html>

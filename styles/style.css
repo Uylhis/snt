@@ -253,3 +253,72 @@ h2 {
   .entete img { height: 64px; }
   .bandeau-theme { flex-direction: column; text-align: center; }
 }
+
+/* ---------- Le labo HTTP ---------- */
+
+/* Formulaire de requête */
+.requete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+.requete label { font-weight: bold; }
+.requete .racine-site { font-family: monospace; color: var(--gris); }
+.requete input {
+  flex: 1 1 220px;
+  min-width: 0;
+  font: 1rem monospace;
+  padding: 10px;
+  border: 2px solid var(--gris);
+  border-radius: 8px;
+}
+.requete .bouton { border: 0; cursor: pointer; font-size: 1rem; }
+
+/* Blocs de code affichés tels quels */
+pre.code {
+  background: #2b2b2d;
+  color: #f2f2f3;
+  padding: 12px 14px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: .85rem;
+  line-height: 1.45;
+  white-space: pre;
+}
+
+/* Tableaux d'en-têtes */
+table.entetes {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blanc);
+  font-size: .95rem;
+}
+table.entetes th, table.entetes td {
+  border: 1px solid #dcdcde;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+table.entetes th { background: #e6e6e8; color: var(--gris-fonce); }
+
+/* Code de statut : vert si OK, rouge sinon */
+.statut { font-weight: bold; font-size: 1.1rem; padding: 8px 12px; border-radius: 8px; }
+.statut.ok { background: #e3f1e3; color: #23632a; }
+.statut.erreur { background: #f8e1e1; color: var(--rouge); }
+
+.apercu-recu { max-width: 260px; height: auto; border: 1px solid #dcdcde; border-radius: 8px; }
+
+/* Code à recopier dans Éléa */
+.code-secret {
+  display: inline-block;
+  font: bold 1.6rem monospace;
+  letter-spacing: 2px;
+  color: var(--rouge);
+  background: #fdf6e8;
+  border: 3px dashed var(--dore);
+  padding: 6px 16px;
+  border-radius: 10px;
+}
