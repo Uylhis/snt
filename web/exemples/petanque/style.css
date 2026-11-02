@@ -1,0 +1,42 @@
+body {
+  background-color: blanchedalmond; 
+  color: #444; 
+  font-family: "Open Sans", sans-serif;
+  padding: 4px 25px 5px 25px;
+  font-size: 18px;
+  margin: 0;
+}
+h1 {
+  background-color: blanchedalmond; 
+  color: #E75656; 
+  font-family: "Bahnschrift", sans-serif;
+  padding: 4px 25px 8px 58px;
+  font-size: 52px;
+  margin: 0;
+  text-align : center
+
+}
+h2 {
+  background-color: blanchedalmond; 
+  color: #203BD4; 
+  font-family: "Arial Unicode MS", sans-serif;
+  padding: 4px 25px 8px 58px;
+  font-size: 32px;
+  margin: 0;
+  text-align : left
+
+}
+#top {
+border-bottom: 1px solid black;
+}
+
+table {
+width: 100%;
+border-collapse: chocolate;
+margin-top: 20px;
+}
+th, td {
+border: 2px solid #ccc;
+padding: 10px;
+text-align: center;
+}

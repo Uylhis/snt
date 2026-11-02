@@ -1,0 +1,39 @@
+   body {
+  background-color:#CAE6FF; 
+  color: ; 
+  font-family: "Open Sans", sans-serif;
+  padding: 4px 25px 5px 25px;
+  font-size: 18px;
+  margin: 0;
+}   
+
+h1 { 
+ background-color: red; 
+  color: black; 
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  text-align: center 
+} 
+h2 { 
+  color:red; 
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  font-style: italic
+}
+
+#top {
+border: 1px solid black;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+th, td {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: left;
+}

@@ -1,0 +1,70 @@
+
+body {
+  background-color: lightblue; 
+  color: #444; 
+  font-family: "Open Sans", sans-serif;
+  padding: 4px 25px 5px 25px;
+  font-size: 18px;
+  margin: 0;
+}
+body {            /* un sélecteur qui fait référence à une balise du code HTML */
+  color: black;   /* des propriétés de formatage avec des valeurs associées */
+}                 /* des accolades pour englober l'ensemble des propriétés */
+
+h1 { 
+  color: white; 
+  background-color: darkred;
+  
+} 
+
+#zut {
+  border: 1px solid black;
+}
+h2 { 
+  color: red; 
+  background-color: whitete;
+  
+} 
+
+#zut {
+  border: 1px solid black;
+}
+h3 { 
+  color: red; 
+  background-color: ligh;
+  
+} 
+
+#zut {
+  border: 1px solid black;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+h1, h2, h3, h4, h5,h6 {
+  transition: transform 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover {
+  transform: scale(1.2);
+}
+a {
+  display: inline-block;
+  transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
+  color: #ff6600; 
+}
+img {
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+img {
+  display: block;
+  margin: 0 auto;
+}

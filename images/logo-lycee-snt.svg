@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 224" width="366" height="224">
+  <!-- Logo complet : nom du lycée encadré + bloc SNT grisé ; marge blanche de 8 px tout autour et entre les deux blocs -->
+  <!-- Fond blanc de l'image -->
+  <rect width="366" height="224" fill="#ffffff"/>
+
+  <!-- ===== Bloc du haut : nom du lycée dans un cadre gris arrondi, intérieur blanc ===== -->
+  <!-- Cadre de 3 px, même gris et mêmes coins arrondis que le bloc SNT -->
+  <rect x="9.5" y="9.5" width="347" height="97" rx="11" fill="#ffffff" stroke="#6d6e71" stroke-width="3"/>
+  <g transform="translate(8,6)">
+    <!-- « Lycée » en gris -->
+    <text x="12" y="28" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#6d6e71">Lycée</text>
+    <!-- Carré doré avec le J -->
+    <rect x="12" y="38" width="40" height="52" fill="#e3a335"/>
+    <text x="32" y="81" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#ffffff">J</text>
+    <!-- « ean » en gris -->
+    <text x="56" y="81" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#6d6e71" textLength="76" lengthAdjust="spacingAndGlyphs">ean</text>
+    <!-- Carré rouge avec le F -->
+    <rect x="138" y="38" width="40" height="52" fill="#a3262a"/>
+    <text x="158" y="81" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#ffffff">F</text>
+    <!-- « AVARD » en gris -->
+    <text x="182" y="81" font-family="Arial, Helvetica, sans-serif" font-size="46" fill="#6d6e71" textLength="156" lengthAdjust="spacingAndGlyphs">AVARD</text>
+  </g>
+
+  <!-- ===== Bloc du bas : SNT sur fond gris arrondi, même taille que le cadre du haut ===== -->
+  <g transform="translate(8,116)">
+    <!-- Fond gris de la charte -->
+    <rect width="350" height="100" rx="12" fill="#6d6e71"/>
+
+    <!-- Carré rouge avec le N en blanc gras, aligné sur le J -->
+    <rect x="12" y="10" width="36" height="36" rx="5" fill="#a3262a"/>
+    <text x="30" y="41" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">N</text>
+    <!-- « umérique » en blanc, dans le bas de la ligne, jusqu'au S -->
+    <text x="52" y="44" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#ffffff" textLength="120" lengthAdjust="spacingAndGlyphs">umérique</text>
+
+    <!-- S commun en gris gras sur blanc : fin de « Numériques », début de « Sciences » -->
+    <rect x="176" y="10" width="36" height="36" rx="5" fill="#ffffff"/>
+    <text x="194" y="41" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#6d6e71">S</text>
+    <!-- « ciences » en blanc, dans le haut de la ligne, à droite du S -->
+    <text x="216" y="30" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#ffffff">ciences</text>
+
+    <!-- « et » en blanc, devant le T -->
+    <text x="132" y="88" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#ffffff">et</text>
+    <!-- Carré doré avec le T en blanc gras, aligné sur le F -->
+    <rect x="138" y="56" width="36" height="36" rx="5" fill="#e3a335"/>
+    <text x="156" y="87" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#ffffff">T</text>
+    <!-- « echnologie » en blanc -->
+    <text x="178" y="88" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#ffffff" textLength="150" lengthAdjust="spacingAndGlyphs">echnologie</text>
+  </g>
+</svg>

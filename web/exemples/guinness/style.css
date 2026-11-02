@@ -1,0 +1,65 @@
+body {
+  background-color: lightgreen; 
+  color: #444; 
+  font-family: "Open Sans", sans-serif;
+  padding: 4px 25px 5px 25px;
+  font-size: 18px;
+  margin: 0;
+}
+h1{
+  color: black;
+  text-decoration: underline red;
+  font-size: 24px; 
+  text-align: center
+}
+h2{
+  color: red;
+  front-style: oblique;
+  font-size: 20px; 
+  text-align: :left;
+}
+h3{
+  color:purple;
+  font-style: italic;
+  font-size: 18px; 
+  text-align: :left;
+}
+h4{
+  color: purple;
+  font-style: oblique;
+  font-size: 16px; 
+  text-align: :left;
+}
+#top {
+border: 1px solid black;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+th, td {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: left;
+}
+p{
+  color: black;
+  font-style: normal;
+  font-size: 15px; 
+  text-align: :left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+body {
+  background-color: white; 
+  color: #444; 
+  font-family: "Open Sans", sans-serif;
+  padding: 4px 25px 5px 25px;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1 { 
+  color: darkcyan; 
+  background-color: ;
+}
+h2 { 
+  color: darkred; 
+  background-color: ;
+} 
+h3 { 
+  color: black; 
+  background-color: ;
+} 
+
+#top  {
+  border: 2px solid black;
+}
+#histoire  {
+  border: 2px solid black;
+}
+#voiture  {
+  border: 2px solid black;
+}
+#participants  {
+  border: 2px solid black;
+}
+#attributiondespoints  {
+  border: 2px solid black;
+}
+#résumésurlesbalisesHTML  {
+  border: 2px solid black;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+th, td {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: left;
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Illustration du thème « internet » : fleur à 8 pétales, symbole au cœur -->
+  <ellipse cx="100" cy="46" rx="24" ry="44" fill="#e3a335" transform="rotate(0 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#f1cf8f" transform="rotate(45 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#e3a335" transform="rotate(90 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#f1cf8f" transform="rotate(135 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#e3a335" transform="rotate(180 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#f1cf8f" transform="rotate(225 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#e3a335" transform="rotate(270 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#f1cf8f" transform="rotate(315 100 100)"/>
+  <circle cx="100" cy="100" r="47" fill="#ffffff" stroke="#6d6e71" stroke-width="3"/>
+  <g fill="none" stroke="#6d6e71" stroke-width="4">
+  <circle cx="100" cy="100" r="28"/><ellipse cx="100" cy="100" rx="12" ry="28"/>
+  <line x1="72" y1="100" x2="128" y2="100"/><path d="M77 86 Q100 92 123 86 M77 114 Q100 108 123 114"/></g>
+</svg>

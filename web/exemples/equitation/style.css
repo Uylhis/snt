@@ -1,0 +1,34 @@
+body {
+  background-color:#B9C0F5; 
+  color: ; 
+  font-family: "Open Sans", sans-serif;
+  padding: 4px 25px 5px 25px;
+  font-size: 18px;
+  margin: 0;
+}
+  h1 {
+    color: black;                
+    text-decoration: underline;  
+    text-decoration-color: red;   
+    font-size: 24px;             
+    text-align: center;          
+}
+h2 {
+    color: red;                    
+    font-style: italic;            
+    font-size: 20px;                
+    text-align: left;               
+}
+#top {
+border: 1px solid black;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+th, td {
+border: 1px solid #000;
+padding: 10px;
+text-align: left;
+}

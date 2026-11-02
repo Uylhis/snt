@@ -1,0 +1,205 @@
+<meta charset="UTF-8">
+<title>Portfolio Jazz Minimaliste</title>
+<style>
+  /* --- Style global --- */
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    scroll-behavior: smooth;
+  }
+
+ 
+
+
+  
+
+
+body {
+    background-color: #8E7D6B;
+ 
+}
+
+body {
+    color: #f0e6d2; 
+}
+
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+
+
+
+
+.relief {
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6); 
+    border-radius: 10px; 
+    transition: transform 0.3s;
+}
+
+.relief:hover {
+    transform: scale(1.08); 
+}
+
+
+
+h1 {
+    font-size: 3em;
+    color: #f0e6d2; 
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+
+  
+    border-bottom: 3px solid #f0e6d2; 
+    display: inline-block;  */
+    padding-bottom: 5px;  
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+h1 {
+    animation: blink 2s infinite;
+}
+
+.relief:hover {
+    transform: translateY(-10px) scale(1.08);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+}
+
+
+
+
+
+
+    h2 {
+            font-size: 2em;
+            margin-top: 40px;
+            color: #f0e6d2;
+            display: inline-block; 
+            position: relative;    
+            cursor: pointer;       
+        }
+
+        
+        h2::after {
+            content: "";
+            display: block;
+            width: 0;            
+            height: 2px;       
+            background-color: #f0e6d2; 
+            transition: width 0.3s;   
+            margin-top: 5px;
+        }
+
+       
+        h2:hover::after {
+            width: 100%;           
+        }
+
+        
+        .relief {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .relief:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+
+
+
+
+
+
+    h3 {
+            font-size: 2em;
+            margin-top: 40px;
+            color: #f0e6d2;
+            display: inline-block; 
+            position: relative;    
+            cursor: pointer;       
+        }
+
+        
+        h3::after {
+            content: "";
+            display: block;
+            width: 0;            
+            height: 2px;       
+            background-color: #f0e6d2; 
+            transition: width 0.3s;   
+            margin-top: 5px;
+        }
+
+       
+        h3:hover::after {
+            width: 100%;           
+        }
+
+        
+        .relief {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .relief:hover {
+            transform: scale(1.08);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+th, td {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: left;
+}
+
+
+
+p {
+    color: #f0e6d2; /* beige clair */
+}
+
+
+
+
+
+   
+
+

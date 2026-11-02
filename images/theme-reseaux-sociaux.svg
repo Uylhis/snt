@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Illustration du thème « reseaux-sociaux » : fleur à 8 pétales, symbole au cœur -->
+  <ellipse cx="100" cy="46" rx="24" ry="44" fill="#a3262a" transform="rotate(0 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#d98a8c" transform="rotate(45 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#a3262a" transform="rotate(90 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#d98a8c" transform="rotate(135 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#a3262a" transform="rotate(180 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#d98a8c" transform="rotate(225 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#a3262a" transform="rotate(270 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#d98a8c" transform="rotate(315 100 100)"/>
+  <circle cx="100" cy="100" r="47" fill="#ffffff" stroke="#6d6e71" stroke-width="3"/>
+  <g stroke="#6d6e71" stroke-width="4"><line x1="100" y1="80" x2="78" y2="118"/><line x1="100" y1="80" x2="122" y2="118"/><line x1="78" y1="118" x2="122" y2="118"/></g>
+  <circle cx="100" cy="78" r="10" fill="#a3262a"/><circle cx="78" cy="118" r="10" fill="#e3a335"/><circle cx="122" cy="118" r="10" fill="#6d6e71"/>
+</svg>

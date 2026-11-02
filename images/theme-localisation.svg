@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Illustration du thème « localisation » : fleur à 8 pétales, symbole au cœur -->
+  <ellipse cx="100" cy="46" rx="24" ry="44" fill="#e3a335" transform="rotate(0 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#f1cf8f" transform="rotate(45 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#e3a335" transform="rotate(90 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#f1cf8f" transform="rotate(135 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#e3a335" transform="rotate(180 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#f1cf8f" transform="rotate(225 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#e3a335" transform="rotate(270 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#f1cf8f" transform="rotate(315 100 100)"/>
+  <circle cx="100" cy="100" r="47" fill="#ffffff" stroke="#6d6e71" stroke-width="3"/>
+  <path d="M100 134 L83 104 A20 20 0 1 1 117 104 Z" fill="#a3262a"/>
+  <circle cx="100" cy="94" r="8" fill="#ffffff"/>
+  <ellipse cx="100" cy="134" rx="16" ry="4" fill="none" stroke="#6d6e71" stroke-width="3"/>
+</svg>

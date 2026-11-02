@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ma page Internet</title>
+    <meta name="author" content="N. B." />
+    <link rel="icon" type="image/svg" href="LogoSNT.svg">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<center>
+<h1>Le WEC</h1>
+</center>
+<center>
+
+<p>  <img 
+src="data:image/jpeg;base64,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" </p>
+</center>
+  
+<p><h2>Sommaire</h2></p>
+          <ul>
+          <li><a href="#top">Definition</a></li>
+          <li><a href="#histoire">Histoire</a></li>
+          <li><a href="#voiture">Voiture</a></li>
+          <li><a href="#participants">Participants</a></li>
+            <li><a href="#attributiondespoints">Attribution des points</a></li>
+          <li><a href="#résumésurlesbalisesHTML">Résumé sur les balises HTML</a></li>
+</ul>
+             <h2 id="top">Définition</h2>
+ <a href="https://youtu.be/Lp0WLA0HM3g?si=2PkouVgW1QB5PQFj"> Comprendre le WEC </a>
+  <p><a href="https://www.fiawec.com/fr/page/le-wec-cest-quoi/28#:~:text=Conjointement%20cr%C3%A9%C3%A9%20en%202012%20par,phare%20de%20l'endurance%20automobile."> C'est quoi le WEC ?</a></p>
+    <p>Le championnat du monde d'endurance FIA (FIA World Endurance Championship ou FIA WEC) est un championnat de course de voitures de sport organisé par l'Automobile Club de l'Ouest sous le parrainage de la Fédération internationale de l'automobile (FIA).</p>
+       <p>Créé en 2012, le championnat du monde d'endurance FIA est issu de l'Intercontinental Le Mans Cup, lui-même créé en 2010. Il fait revivre une compétition mondiale vingt ans après l'arrêt de l'ancien championnat du monde des voitures de sport.</p>
+       <p>Cette compétition d'endurance rassemble des voitures de type sport-prototypes en catégorie Hypercar depuis 2021, et précédemment en catégorie Le Mans Prototype ; et de type Grand Tourisme en catégorie LMGT3 depuis 2024, et précédemment en catégorie LMGTE.</p>
+       
+             <h2 id="histoire">Histoire</h2>
+  <ul>
+          <li><a href="#creation du championnat du monde d'endurance (2012)">Creation du championnat du monde d'endurance FIA (2012)</a></li>
+          <li><a href="#nouvelle réglementation en LMP1 (2014)">Nouvelle réglementation en LMP1 (2014)</a></li>
+          <li><a href="#duel entre Porsche et Toyota (2017)">Duel entre Porsche et Toyota (2017)</a></li>
+          <li><a href="#super saison (2018-2019)">Super saison (2018-2019)</a></li>
+            <li><a href="#nouvelle réglementation et retour à une saison se déroulant sur une année civile (2021)">Nouvelle réglementation et retour à une saison se déroulant sur une année civile (2021)</a></li>
+</ul>
+    <h3 id="creation du championnat du monde d'endurance (2012)">Creation du championnat du monde d'endurance FIA (2012)</h3>
+<center><img 
+src="https://www.autohebdo.fr/app/uploads/2021/06/0309-122459.jpg"alt="Audi 2012" style="width:50%"></center><p>Le 9 juin 2011, au musée automobile de la Sarthe, l'Automobile Club de l'Ouest (ACO) et la Fédération international de l'automobile (FIA) annoncent lors d'une conférence de presse la création d'un championnat du monde d'endurance FIA.</p>
+
+             <p>Jean-Claude Plassart, président de l'ACO et Jean Todt, président de la FIA et principal artisan de la création de ce championnat, s'expriment pour indiquer que ce championnat doit « promouvoir l'innovation et le développement de nouvelles technologies permettant ainsi aux constructeurs automobiles de démontrer, grâce à la rigueur de la compétition, leur capacité d'inventivité ».</p>
+
+      <p>Le principe du championnat pour la saison 2012 est de récompenser le meilleur constructeur LMP1, la meilleure équipe privée des catégories LMP1 et LMP2, le meilleur constructeur LMGTE, et la meilleure équipe en LMGTE Pro et LMGTE Am. De plus, un classement des pilotes est créé.</p>
+  
+  <h3 id="nouvelle réglementation en LMP1 (2014)">Nouvelle réglementation en LMP1 (2014)</h3>
+  <center><img 
+src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Toyota_TS040_Silverstone_Pits.JPG"alt="Toyota 2014" style="width:50%"></center>
+<p>En 2014, l'arrivée de Porsche coïncide avec l'arrivée d'un nouveau règlement technique qui accentue notamment la technologie hybride sur la catégorie LMP1 ; la catégorie a été divisée en deux sous-catégories : le LMP1-H pour les LMP1 hybrides et les LMP1-L pour les LMP1 « lights ». Cependant l'année suivante, le championnat revient à une seule catégorie LMP1 en fusionnant les catégories LMP1-H et LMP1-L.</P>
+
+<p>À la suite de son échec, Nissan décide fin 2015 de quitter le championnat, le constructeur japonais n'ayant disputé que les 24 Heures du Mans.</p>
+  
+  <h3 id="duel entre Porsche et Toyota (2017)">Duel entre Porsche et Toyota (2017)</h3>
+    <center><img 
+src="https://cdn-3.motorsport.com/images/amp/2epnQJ90/s6/wec-spa-francorchamps-2017-1-porsche-team-porsche-919-hybrid-neel-jani-andre-lotterer-nick.jpg"alt="Porsche contre Toyota 2017" style="width:50%"></center>
+  <p>Le 26 octobre 2016, Audi annonce son retrait du championnat à la fin de la saison 2016. Après ce départ, nombreux sont les observateurs à être méfiants sur l'avenir du championnat et de la catégorie LMP1 « hybride » qu'ils jugent trop coûteuse. Pour certains, les organisateurs ont privilégié la promotion et la médiatisation des constructeurs avec la technologie hybride à juste titre, mais au détriment de la présence des écuries privées en LMP1.</p>
+
+<p>Seuls deux constructeurs LMP1, Porsche et Toyota, disputent la saison 2017. Cette décroissance n'est pas inversée en 2018 car Porsche annonce le 28 juillet 2017 quitter le championnat à la fin de la saison pour rejoindre la Formule E, laissant Toyota seul constructeur en LMP1. Les causes possibles de ce départ sont multiples, entre l'affaire Volkswagen, ou la volonté d'implication totale en Formule E.</p>
+  
+  <h3 id="super saison (2018-2019)">Super saison (2018-2019)</h3>
+     <center><img 
+src="https://www.dailysportscar.com/wp-content/uploads/2017/07/wec-nurburgring-2017-finish-order-03-730x487.jpg" style="width:50%"></center>
+  <p>À l'occasion des 6 Heures de Mexico en septembre 2017, une nouvelle réglementation et un nouveau calendrier sont dévoilés. La saison se dispute dorénavant sur deux années civiles. La « Super Saison » 2018-2019 est une saison de transition avec une double participation aux 6 Heures de Spa et aux 24 Heures du Mans et la manche du circuit de Sebring qui réapparaît au sein du championnat après cinq ans d'absence. Concernant la réglementation, le niveau de performance des prototypes non-hybrides est uniformisé avec la réglementation des LMP1 hybrides.</p>
+  
+  <h3 id="nouvelle réglementation et retour à une saison se déroulant sur une année civile (2021)">Nouvelle réglementation et retour à une saison se déroulant sur une année civile (2021)</h3>
+       <center><img 
+src="https://www.goodwood.com/globalassets/.road--racing/race/modern/2021/4-april/fia-wec-entry-2021.jpg?rxy=0.5,0.5" style="width:50%"></center>
+  <p>L'année 2021 marque l'arrivée d'une nouvelle réglementation technique avec les Le Mans Hypercars, un nouveau type de voitures destinées à renouveler la catégorie reine, et l'adoption d'une « balance de performances » pour cette catégorie. Contrairement aux deux saisons précédentes, le championnat 2021 revient à une saison se déroulant sur une année civile. En 2023, les Le Mans Daytona hybrid sont aussi acceptées, formant avec les Le Mans Hypercars la catégorie reine Hypercar.</p>
+
+<p>À partir de 2024, le WEC n'accepte plus que des Hypercars et des LMGT3, les LMP2 n'étant plus présentes qu'aux 24 Heures du Mans.</p>
+
+<h2 id="voiture">Voiture</h2>
+    <ul>
+          <li><a href="#balance des performances">Balance des performances</a></li>
+          <li><a href="#pneumatiques">Pneumatiques</a></li>
+</ul>
+       <center><img 
+src="https://www.fiawec.com/media/cache/resolve/hero_desktop/umbrella_media/66fce6ea4ef8c-67f013b7abc1f425402172.jpg" style="width:50%"></center>
+  <p>Les voitures les plus rapides du championnat ont été successivement les LMP1, catégorie supérieure des Le Mans Prototype, et les Hypercars, entrées en compétition depuis 2021.</p>
+
+<p>Les prototypes intermédiaires ont été les LMP2. La catégorie s’arrête dans le championnat en 2024, mais reste autorisée aux 24 Heures du Mans.</p>
+
+<p>Les voitures les moins rapides, et basées sur des modèles de série, ont été les LMGTE, qui sont remplacées en 2024 par les LMGT3.</p>
+
+<p>En ce qui concerne les LMP1, le choix du moteur étant libre, les différents constructeurs pouvaient opter pour des solutions techniques différentes. Ils étaient cependant exposés à certaines restrictions sur la motorisation et l'hybridation, les performances étant ajustées dans le cadre de l' « Equivalence de Technologie » (EoT) afin de permettre de rapprocher les performances de voitures dont les constructeurs ont fait des choix techniques différents.</p>
+
+<p>Depuis 2021, les LMP1 ont été remplacées par les Hypercars, catégorie elle-même composée des types LMH (Le Mans Hypercars) et LMDh (Le Mans Daytona hybrid), ce dernier type n'étant admis que depuis 2023. Toutes les Hypercars sont soumises à une balance de performances (BoP, pour Balance of Performance en anglais).</p>
+  
+  <h3 id="balance des performances">Balance des performances</h3>
+  
+  <p>Le championnat du monde d'endurance applique pour les catégories Hypercars et LMGTE un système d'équilibre des performances appelé « balance des performances » (traduction littérale de Balance of Performance, ou BoP). Dans chaque catégorie, pour chaque modèle sont observés les meilleurs temps au tour au fur et à mesure, qui servent de référence de comparaison. À partir de cette référence, lors des courses suivantes, les voitures se voient appliquées des contraintes spécifiques à chaque modèle : des masses minimums différentes, des brides sur l'apport d'air ou le rapport de pression de suralimentation. Les tailles maximum de réservoir sont aussi variables, et l'on fixe également le seuil de vitesse en dessous duquel la puissance du système hybride n'est pas autorisée à être transmise aux roues. L'objectif de cette réglementation est d'égaliser les performances, afin par exemple d'obtenir un spectacle accru. Pour la catégorie Le Mans Hypercars, elle vise aussi à limiter drastiquement les coûts de participation d'un constructeur, en n'encourageant pas à améliorer les performances des modèles en compétition.</p>
+
+<p>La réglementation de la balance des performances évolue régulièrement, et plus encore les valeurs des limitations imposées. Ceci entraîne quelquefois de fortes protestations des pilotes et des écuries, par exemple en GTE Pro aux 24 Heures du Mans 2016. À partir de 2017 un système automatique de balance des performances est créé pour le GTE Pro suivant les performances au cours des manches, les 24 Heures du Mans font exception avec l'élaboration d'une balance spécifique.</p>
+
+<p>C'est à partir de 2021 que la catégorie reine Le Mans Hypercars, qui est en principe celle qui prétend à la victoire au classement général, est aussi soumise à cette réglementation.</p>
+
+<p>À partir de 2023, en catégorie Hypercar, la BOP était prévue d'être définie non plus à l'aide de mesures chronométriques (temps sur un tour), mais à partir de simulations faites par le législateur pour chaque voiture en début de saison. En réalité, faute de résultats satisfaisants, le législateur a adopté un système mixte mis en place juste avant les 24h du Mans. D'autre part, le règlement sportif interdit aux pilotes et membres des équipes engagées de commenter la BOP dans les médias ou sur les réseaux sociaux, sous peine de sanctions.</p>
+
+  <h3 id="pneumatiques">Pneumatiques</h3>
+       <center><img 
+src="https://www.autohebdo.fr/app/uploads/2024/04/pneus-wec-2024-753x494.jpg" style="width:50%"></center>
+  <p>Initialement, en 2012, Michelin et Dunlop étaient les deux fournisseurs de pneumatiques pour les quatre catégories participantes. En 2019, le manufacturier américain Goodyear remplace Dunlop.</p>
+
+<p>La répartition entre les catégories concourant en 2026 est la suivante : Michelin équipe la catégorie Hypercar, et Goodyear les LMGT3 et les LMP2.</p>
+
+  <h2 id="participants">Participants</h2>
+    <ul>
+          <li><a href="#Lmp1 puis Hypercar">LMP1 puis Hypercar</a></li>
+          <li><a href="#LMGTE puis LMGT3">LMGTE puis LMGT3</a></li>
+</ul>
+  <h3 id="Lmp1 puis Hypercar">LMP1 puis Hypercar</h3>
+
+<table border="1">
+      <thead>
+          <tr>
+          <th>Constructeur</th>
+          <th>2012</th>
+          <th>2013</th>
+          <th>2014</th>
+          <th>2015</th>
+          <th>2016</th>
+          <th>2017</th>
+          <th>2018-2019</th>
+          <th>2019-2020</th>
+          <th>2021</th>
+          <th>2022</th>
+          <th>2023</th>
+          <th>2024</th>
+          <th>2025</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>Toyota</code></td>
+          <td>TS030 Hybrid (LMP1)</td>
+          <td>TS030 Hybrid (LMP1)</td>
+          <td>TS040 Hybrid (LMP1)</td>
+          <td>TS040 Hybrid (LMP1)</td>
+          <td>TS050 Hybrid (LMP1)</td>
+          <td>TS050 Hybrid (LMP1)</td>
+          <td>TS050 Hybrid (LMP1)</td>
+          <td>TS050 Hybrid (LMP1)</td>
+          <td>GR010 Hybrid (Hypercar (LMH/LMDh))</td>
+          <td>GR010 Hybrid (Hypercar (LMH/LMDh))</td>
+          <td>GR010 Hybrid (Hypercar (LMH/LMDh))</td>
+          <td>GR010 Hybrid (Hypercar (LMH/LMDh))</td>
+          <td>GR010 Hybrid (Hypercar (LMH/LMDh))</td>
+        </tr>
+        <tr>
+          <td><code>Rebellion</code></td>
+          <td>B12/60 (LMP1)</td>
+          <td>B12/60 (LMP1)</td>
+          <td>R-One (LMP1)</td>
+          <td>R-One (LMP1)</td>
+          <td>R-One (LMP1)</td>
+          <td></td>
+          <td>R13 (LMP1)</td>
+          <td>R13 (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+        <tr>
+          <td><code>Audi</code></td>
+          <td>R18 TDI R18 ultra R18 e-tron quattro (LMP1)</td>
+          <td>R18 e-tron quattro (LMP1)</td>
+          <td>R18 e-tron quattro (LMP1)</td>
+          <td>R18 e-tron quattro (LMP1)</td>
+          <td>R18 (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Acura</code></td>
+          <td>ARX-03 (LMP1)</td>
+          <td>ARX-03 (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Pescarolo</code></td>
+          <td>Pescarolo 01 Pescarolo 03 (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>ByKolles Racing</code></td>
+          <td></td>
+          <td></td>
+          <td>CLM P1/01 (LMP1)</td>
+          <td>CLM P1/01 (LMP1)</td>
+          <td>CLM P1/01 (LMP1)</td>
+          <td>CLM P1/01 (LMP1)</td>
+          <td>CLM P1/01 (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Vanwall</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Vandervell 680 (Hypercar (LMH/LMDh))</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Porsche</code></td>
+          <td></td>
+          <td></td>
+          <td>919 Hybrid (Hypercar (LMP1)</td>
+          <td>919 Hybrid (Hypercar (LMP1)</td>
+          <td>919 Hybrid (Hypercar (LMP1)</td>
+          <td>919 Hybrid (Hypercar (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>963 (Hypercar (LMH/LMDh))</td>
+          <td>963 (Hypercar (LMH/LMDh))</td>
+          <td>963 (Hypercar (LMH/LMDh))</td>
+        </tr>
+        <tr>
+          <td><code>Nissan</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>GT-R LM Nismo (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Ginetta</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>G60-LT-P1 (LMP1)</td>
+          <td>G60-LT-P1 (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>BR Engineering</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>BR1 (LMP1)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Alpine</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>A480 (LMP1)</td>
+          <td>A480 (LMP1)</td>
+          <td></td>
+          <td>A424 (Hypercar (LMH/LMDh))</td>
+          <td>A424 (Hypercar (LMH/LMDh))</td>
+        </tr>
+        <tr>
+          <td><code>Glickenhaus</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>007 LMH (Hypercar (LMH/LMDh))</td>
+          <td>007 LMH (Hypercar (LMH/LMDh))</td>
+          <td>007 LMH (Hypercar (LMH/LMDh))</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Peugeot</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>9X8 (Hypercar (LMH/LMDh))</td>
+          <td>9X8 (Hypercar (LMH/LMDh))</td>
+          <td>9X8 (Hypercar (LMH/LMDh))</td>
+          <td>9X8 (Hypercar (LMH/LMDh))</td>
+        </tr>
+        <tr>
+          <td><code>Ferrari</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>499P (Hypercar (LMH/LMDh))</td>
+          <td>499P (Hypercar (LMH/LMDh))</td>
+          <td>499P (Hypercar (LMH/LMDh))</td>
+        </tr>
+        <tr>
+          <td><code>Cadillac</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>V-Series.R (Hypercar (LMH/LMDh))</td>
+          <td>V-Series.R (Hypercar (LMH/LMDh))</td>
+          <td>V-Series.R (Hypercar (LMH/LMDh))</td>
+        </tr>
+        <tr>
+          <td><code>Lamborghini</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>SC63 (Hypercar (LMH/LMDh))</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>BMW</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>M Hybrid V8 (Hypercar (LMH/LMDh))</td>
+          <td>M Hybrid V8 (Hypercar (LMH/LMDh))</td>
+        </tr>
+        <tr>
+          <td><code>Isotta Fraschini</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Tipo 6 LMH-C (Hypercar (LMH/LMDh))</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Aston Martin</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Valkyrie AMR-LMH (Hypercar (LMH/LMDh))</td>
+        </tr>
+      </tbody>
+</table>
+<p></p>
+<p>  Pour les débuts du championnat en 2012, deux constructeurs sont engagées dans la catégorie LMP1 : Audi et Toyota. Avec le retrait de Peugeot en janvier 2012 et l'arrivée tardive de Toyota, Audi est présenté comme étant le grand favori de cette première saison.</p>
+
+<p>Depuis l'année 2014, trois constructeurs sont engagés dans la compétition avec Audi, Porsche et Toyota dans la catégorie reine (LMP1). Audi remporte le titre constructeur du WEC en 2012 et 2013, suivi de Toyota en 2014 puis de Porsche en 2015. Nissan a également participé au WEC lors de la saison 2015, présentant un concept innovant avec un moteur avant et des roues avant plus larges que les roues arrière ; cependant le constructeur n'a participé qu'aux 24 Heures du Mans 2015 et n'a marqué aucun point pour le championnat, décidant à la fin de la saison de mettre un terme à ses activités en WEC dans la catégorie LMP1.</p>
+
+<p>Un autre retrait a lieu fin 2016 avec Audi, le constructeur annonçant la fin de son engagement dès la fin de la saison afin de concentrer ses ressources sur d'autres disciplines.</p>
+
+<p>Fin 2017, Porsche se retire du LMP1, laissant pour seul constructeur de la catégorie Toyota, présent depuis la création du WEC. Depuis 2018, le titre de Champion du monde des constructeurs LMP1 n'est ainsi plus décerné.</p>
+
+<p>En 2021 et 2022, l'Alpine A480 est autorisée à concourir dans la catégorie Hypercar, dû à un manque d'engagés dans cette dernière.</p>
+
+    <h3 id="LMGTE puis LMGT3">LMGTE puis LMGT3</h3>
+
+<table border="1">
+      <thead>
+        <tr>
+          <th>Constructeur</th>
+          <th>2012</th>
+          <th>2013</th>
+          <th>2014</th>
+          <th>2015</th>
+          <th>2016</th>
+          <th>2017</th>
+          <th>2018-2019</th>
+          <th>2019-2020</th>
+          <th>2021</th>
+          <th>2022</th>
+          <th>2024</th>
+          <th>2025</th>
+          </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <td><code>Ferarri</code></td>
+          <td>458 Italia GT2 (LMGTE)</td>
+          <td>458 Italia GT2 (LMGTE)</td>
+          <td>458 Italia GT2 (LMGTE)</td>
+          <td>458 Italia GT2 (LMGTE)</td>
+          <td>488 GTE (LMGTE)</td>
+          <td>488 GTE (LMGTE)</td>
+          <td>488 GTE (LMGTE)</td>
+          <td>488 GTE Evo (LMGTE)</td>
+          <td>488 GTE Evo (LMGTE)</td>
+          <td>488 GTE Evo (LMGTE)</td>
+          <td>296 GT3 (LMGT3)</td>
+          <td>296 GT3 (LMGT3)</td>
+        </tr>
+        <tr>
+          <td><code>Porsche</code></td>
+          <td>911 GT3 RSR (997) (LMGTE)</td>
+          <td>911 RSR (991) (LMGTE)</td>
+          <td>911 RSR (991) (LMGTE)</td>
+          <td>911 RSR (991) (LMGTE)</td>
+          <td>911 RSR (991) (LMGTE)</td>
+          <td>911 RSR (LMGTE)</td>
+          <td>911 RSR (LMGTE)</td>
+          <td>911 RSR-19 (LMGTE)</td>
+          <td>911 RSR-19 (LMGTE)</td>
+          <td>911 RSR-19 (LMGTE)</td>
+          <td>911 GT3 R (LMGT3)</td>
+          <td>911 GT3 R (LMGT3)</td>
+        </tr>
+        <tr>
+          <td><code>Aston Martin</code></td>
+          <td>Vantage GTE (LMGTE)</td>
+          <td>Vantage GTE (LMGTE)</td>
+          <td>Vantage GTE (LMGTE)</td>
+          <td>Vantage GTE (LMGTE)</td>
+          <td>Vantage GTE (LMGTE)</td>
+          <td>Vantage GTE (LMGTE)</td>
+          <td>Vantage AMR (LMGTE)</td>
+          <td>Vantage AMR (LMGTE)</td>
+          <td></td>
+          <td></td>
+          <td>Vantage AMR GT3 (LMGT3)</td>
+          <td>Vantage AMR GT3 (LMGT3)</td>
+        </tr>
+        <tr>
+          <td><code>Ford</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>GT (GTE) (LMGTE)</td>
+          <td>GT (GTE) (LMGTE)</td>
+          <td>GT (GTE) (LMGTE)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Ford Mustang GT3 (LMGT3)</td>
+          <td>Ford Mustang GT3 (LMGT3)</td>
+        </tr>
+        <tr>
+          <td><code>BMW</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>M8 GTE (LMGTE)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>M4 GT3 (LMGT3)</td>
+          <td>M4 GT3 (LMGT3)</td>
+        </tr>
+        <tr>
+          <td><code>Chevrolet</code></td>
+          <td>Corvette C6.R (LMGTE)</td>
+          <td>Corvette C6.R (LMGTE)</td>
+          <td>Corvette C7.R (LMGTE)</td>
+          <td>Corvette C7.R (LMGTE)</td>
+          <td>Corvette C7.R (LMGTE)</td>
+          <td>Corvette C7.R (LMGTE)</td>
+          <td>Corvette C7.R (LMGTE)</td>
+          <td>Corvette C8.R (LMGTE)</td>
+          <td>Corvette C8.R (LMGTE)</td>
+          <td>Corvette C8.R (LMGTE)</td>
+          <td>Corvette Z06 GT3.R (LMGT3)</td>
+          <td>Corvette Z06 GT3.R (LMGT3)</td>
+        </tr>
+        <tr>
+          <td><code>SRT</code></td>
+          <td></td>
+          <td>Viper GTS-R (LMGTE)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><code>Lamborghini</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Huracan GT3 EVO2(LMGT3)</td>
+          <td></td>
+        </tr>
+         <tr>
+          <td><code>Lexus</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>RC F GT3(LMGT3)</td>
+          <td>RC F GT3(LMGT3)</td>
+        </tr>
+        <tr>
+          <td><code>McLaren</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>720 GT3 Evo(LMGT3)</td>
+          <td>720 GT3 Evo(LMGT3)</td>
+        </tr>
+        <tr>
+          <td><code>Mercedes-AMG</code></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>AMG GT3(LMGT3)</td>
+        </tr>
+      </tbody>
+</table>
+
+  <h2 id="attributiondespoints">Attribution des points</h2>
+    <ul>
+          <li><a href="#premier barème (2012-2017)">Premier barème (2012-2017)</a></li>
+          <li><a href="#second barème (depuis 2018)">Second barème (depuis 2018)</a></li>
+</ul>
+  <h3 id="premier barème (2012-2017)">Premier barème (2012-2017)</h3>
+
+  De la création du championnat en 2012 jusqu'en 2017, l'attribution des points se fait de la façon suivante:
+  <p></p>
+<center>Système de points
+
+  <table border="1">
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>1er</th>
+          <th>2e</th>
+          <th>3e</th>
+          <th>4e</th>
+          <th>5e</th>
+          <th>6e</th>
+          <th>7e</th>
+          <th>8e</th>
+          <th>9e</th>
+          <th>10e</th>
+          <th>Au-delà</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>Manches</code></td>
+          <td>25</td>
+          <td>18</td>
+          <td>15</td>
+          <td>12</td>
+          <td>10</td>
+          <td>8</td>
+          <td>6</td>
+          <td>4</td>
+          <td>2</td>
+          <td>1</td>
+          <td>0,5</td>
+        </tr>
+         <tr>
+          <td><code>Le Mans</code></td>
+          <td>50</td>
+          <td>36</td>
+          <td>30</td>
+          <td>24</td>
+          <td>20</td>
+          <td>16</td>
+          <td>12</td>
+          <td>8</td>
+          <td>4</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+</table>
+</center>
+<p>  L'obtention des points est accordée lorsque la voiture a complété au minimum 70 % de la distance parcourue par l'équipage gagnant. Également, 1 point est donné aux équipages de chaque catégorie ayant obtenu la pole dans leur catégorie respective. Excepté la pole, les points sont doublés lors des 24 Heures du Mans.</p>
+
+  <h3 id="second barème (depuis 2018)">Second barème (depuis 2018)</h3>
+
+Le barème d'attribution des points de points évolue à partir de la super saison 2018-2019. En effet, les points ne sont plus doublés pour le Mans mais seulement augmentés de 50 %. Cependant, la manche mancelle est dorénavant présente à deux reprises durant la saison. La manche de Sebring bénéficie elle aussi d'un barème spécifique puisque les points y seront augmentés de 25 %. Ce dispositif est de nouveau modifié la saison suivante pour les 24 Heures du Mans avec le retour du principe des points doublés établi précédemment. L'ensemble de ce système de points est détaillé dans le tableau ci-dessous :
+
+  <center>Système de points
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>1er</th>
+          <th>2e</th>
+          <th>3e</th>
+          <th>4e</th>
+          <th>5e</th>
+          <th>6e</th>
+          <th>7e</th>
+          <th>8e</th>
+          <th>9e</th>
+          <th>10e</th>
+          <th>Au-delà</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr>
+          <td><code>4 ou 6 heures</code></td>
+          <td>25</td>
+          <td>18</td>
+          <td>15</td>
+          <td>12</td>
+          <td>10</td>
+          <td>8</td>
+          <td>6</td>
+          <td>4</td>
+          <td>2</td>
+          <td>1</td>
+          <td>0,5</td>
+        </tr>
+         <tr>
+          <td><code>8 heures ou 1 000 miles</code></td>
+          <td>38</td>
+          <td>27</td>
+          <td>23</td>
+          <td>18</td>
+          <td>15</td>
+          <td>12</td>
+          <td>9</td>
+          <td>6</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+         <tr>
+          <td><code>Le Mans</code></td>
+          <td>50</td>
+          <td>36</td>
+          <td>30</td>
+          <td>24</td>
+          <td>20</td>
+          <td>16</td>
+          <td>12</td>
+          <td>8</td>
+          <td>4</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+</table>
+  </center>
+<p></p>
+  L'obtention des points est toujours accordée lorsque la voiture a complété au minimum 70 % de la distance parcourue par l'équipage gagnant. Également, 1 point est donné aux équipages de chaque catégorie ayant obtenu la pole dans leur catégorie respective.
+
+    <h2 id="résumésurlesbalisesHTML"> Résumé sur les balises HTML </h2>
+  <table border="1">
+      <thead>
+          <tr>
+          <th>Balise</th>
+          <th>Rôle</th>
+          </tr>
+      </thead>
+      <tbody>
+         <tr>
+              <td><code>&lt;body&gt;</code></td>
+              <td>Encadre le corps d'un fichier HTML.</td>
+          </tr>
+          <tr>
+              <td><code>&lt;head&gt;</code></td>
+              <td>Entête de la page, non affichée</td>
+          </tr>
+          <tr>
+              <td><code>&lt;h1&gt;</code></td>
+              <td>Titre principal</td>
+          </tr>
+          <tr>
+              <td><code>&lt;h2&gt;</code></td>
+              <td>Titre moins important</td>
+          </tr>
+          <tr>
+              <td><code>&lt;p&gt;</code></td>
+              <td>Paragraphe</td>
+          </tr>
+          <tr>
+              <td><code>&lt;a&gt;</code></td>
+              <td>Création d'une ancre pour liens hypertexte.</td>
+          </tr>
+          <tr>
+              <td><code>id=</code></td>
+              <td>Est un attribut du langage html</td>
+          </tr>
+          <tr>
+              <td><code>href=</code></td>
+              <td> Cible du lien</td>
+          </tr>
+          <tr>
+              <td><code>&lt;img&gt;</code></td>
+              <td>Image</td>
+          </tr>
+          <tr>
+              <td><code>src=</code></td>
+              <td>Source de l'image</td>
+          </tr>
+          <tr>
+              <td><code>alt=</code></td>
+              <td>Indique aux lecteurs d’écran d’ignorer l’image.</td>
+          </tr>
+          <tr>
+              <td><code>&lt;ul&gt;</code></td>
+              <td>Liste non ordonnée d'éléments</td>
+          </tr> 
+          <tr>
+              <td><code>&lt;li&gt;</code></td>
+              <td>Elément d'une liste</td>
+          </tr>
+              <tr>
+              <td><code>&lt;title&gt;</code></td>
+          <td>Texte dans l'onglet du navigateur</td>
+          </tr>
+          <tr>
+              <td><code>&lt;table&gt;</code></td>
+              <td> Tableau</td>
+          </tr>
+          <tr>
+              <td><code>&lt;td&gt;</code></td>
+              <td>Nouvelle cellule dans un tableau</td>
+          </tr>
+          <tr>
+              <td><code>&lt;tr&gt;</code></td>
+              <td> Nouvelle ligne du tableau</td>
+          </tr>
+      </tbody>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+/* Feuille de style commune du site SNT – Lycée Jean Favard */
+
+/* Couleurs de la charte du lycée */
+:root {
+  --gris: #6d6e71;
+  --gris-fonce: #4a4b4e;
+  --gris-clair: #f2f2f3;
+  --rouge: #a3262a;
+  --dore: #e3a335;
+  --texte: #2b2b2d;
+  --blanc: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texte);
+  background: var(--blanc);
+  line-height: 1.5;
+}
+
+a { color: var(--rouge); }
+
+/* ---------- Page d'accueil : le bouquet des 7 thèmes ---------- */
+
+.accueil-titre {
+  text-align: center;
+  color: var(--gris);
+  font-weight: normal;
+  font-size: 1.15rem;
+  margin: 24px 16px 0;
+}
+
+/* Zone du bouquet : proportions fixes pour que tiges et fleurs restent alignées */
+.bouquet {
+  position: relative;
+  width: min(1000px, 100% - 32px);
+  aspect-ratio: 1000 / 800;
+  margin: 8px auto 32px;
+}
+
+/* Tiges dessinées en fond, de la racine (logo) vers chaque fleur */
+.tiges {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.tiges path {
+  fill: none;
+  stroke: var(--gris);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 2 9;
+  opacity: .55;
+}
+.tiges circle { fill: var(--gris); opacity: .55; }
+
+/* Une fleur = image + intitulé, cliquable */
+.fleur {
+  position: absolute;
+  z-index: 1;
+  width: 16%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+  color: var(--texte);
+}
+.fleur img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform .25s ease;
+}
+.fleur span {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: var(--blanc);
+  font-size: clamp(.75rem, 1.5vw, .95rem);
+  font-weight: bold;
+  line-height: 1.25;
+  color: var(--gris-fonce);
+}
+.fleur:hover img, .fleur:focus-visible img { transform: scale(1.08) rotate(8deg); }
+.fleur:hover span, .fleur:focus-visible span { color: var(--rouge); }
+.fleur:focus-visible { outline: 3px solid var(--dore); outline-offset: 4px; border-radius: 12px; }
+
+/* Le Web, au centre, est un peu plus grand */
+.fleur.centre { width: 19%; }
+
+/* Le logo : la racine du bouquet */
+.racine {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 87%;
+  width: 36%;
+  transform: translate(-50%, -50%);
+}
+.racine img { display: block; width: 100%; height: auto; }
+
+/* Sur téléphone : tiges masquées, logo en haut, thèmes sur deux colonnes */
+@media (max-width: 700px) {
+  .bouquet {
+    aspect-ratio: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 12px;
+  }
+  .tiges { display: none; }
+  .fleur, .racine, .fleur.centre {
+    position: static;
+    transform: none;
+    width: auto;
+  }
+  .racine { grid-column: 1 / -1; order: -2; max-width: 320px; margin: 0 auto; }
+  .fleur.centre { grid-column: 1 / -1; order: -1; max-width: 200px; margin: 0 auto; }
+  .fleur img { max-width: 150px; margin: 0 auto; }
+}
+
+/* ---------- Pages intérieures ---------- */
+
+.entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  border-bottom: 3px solid var(--gris);
+}
+.entete img { height: 90px; width: auto; display: block; }
+.entete .retour {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--gris);
+  white-space: nowrap;
+}
+.entete .retour:hover { color: var(--rouge); }
+
+.contenu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 16px 48px;
+}
+
+.bandeau-theme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 16px 0 8px;
+}
+.bandeau-theme img { width: 110px; height: auto; flex: none; }
+.bandeau-theme h1 { margin: 0; color: var(--gris-fonce); font-size: 1.9rem; }
+.bandeau-theme p { margin: 4px 0 0; color: var(--gris); }
+
+h2 {
+  color: var(--gris-fonce);
+  border-left: 8px solid var(--rouge);
+  padding-left: 10px;
+  margin-top: 36px;
+}
+
+.carte {
+  background: var(--gris-clair);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin: 12px 0;
+}
+.carte ul { margin: 8px 0; padding-left: 22px; }
+.carte li { margin: 4px 0; }
+
+.bouton {
+  display: inline-block;
+  background: var(--rouge);
+  color: var(--blanc);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 22px;
+  border-radius: 10px;
+  margin: 8px 0;
+}
+.bouton:hover, .bouton:focus-visible { background: var(--gris-fonce); }
+
+.bonus {
+  border: 3px solid var(--dore);
+  background: #fdf6e8;
+}
+.bonus strong { color: #8a5a0b; }
+
+/* Galerie des exemples d'élèves */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 16px;
+}
+.exemple {
+  display: block;
+  text-decoration: none;
+  color: var(--texte);
+  background: var(--blanc);
+  border: 2px solid #dcdcde;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.exemple:hover, .exemple:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  border-color: var(--dore);
+}
+.exemple img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: top;
+  border-bottom: 2px solid #dcdcde;
+}
+.exemple .legende { padding: 10px 14px; }
+.exemple .legende strong { display: block; color: var(--gris-fonce); }
+.exemple .legende small { color: var(--gris); }
+
+.vide {
+  text-align: center;
+  color: var(--gris);
+  font-style: italic;
+}
+
+/* Page « accès non autorisé » */
+.ferme {
+  text-align: center;
+  padding: 48px 16px;
+}
+.ferme img { width: 180px; height: auto; opacity: .45; filter: grayscale(1); }
+.ferme h1 { color: var(--gris-fonce); margin: 20px 0 8px; font-size: 1.6rem; }
+.ferme p { color: var(--gris); font-size: 1.15rem; }
+
+.pied {
+  text-align: center;
+  font-size: .85rem;
+  color: var(--gris);
+  border-top: 1px solid #dcdcde;
+  padding: 16px;
+}
+
+@media (max-width: 560px) {
+  .entete img { height: 64px; }
+  .bandeau-theme { flex-direction: column; text-align: center; }
+}

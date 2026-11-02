@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Illustration du thème « objets-connectes » : fleur à 8 pétales, symbole au cœur -->
+  <ellipse cx="100" cy="46" rx="24" ry="44" fill="#6d6e71" transform="rotate(0 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#b9babc" transform="rotate(45 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#6d6e71" transform="rotate(90 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#b9babc" transform="rotate(135 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#6d6e71" transform="rotate(180 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#b9babc" transform="rotate(225 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#6d6e71" transform="rotate(270 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#b9babc" transform="rotate(315 100 100)"/>
+  <circle cx="100" cy="100" r="47" fill="#ffffff" stroke="#6d6e71" stroke-width="3"/>
+  <rect x="82" y="92" width="36" height="32" rx="4" fill="#6d6e71"/>
+  <g stroke="#6d6e71" stroke-width="3"><line x1="76" y1="100" x2="82" y2="100"/><line x1="76" y1="108" x2="82" y2="108"/><line x1="76" y1="116" x2="82" y2="116"/>
+  <line x1="118" y1="100" x2="124" y2="100"/><line x1="118" y1="108" x2="124" y2="108"/><line x1="118" y1="116" x2="124" y2="116"/></g>
+  <g fill="none" stroke="#e3a335" stroke-width="4" stroke-linecap="round"><path d="M90 82 A14 14 0 0 1 110 82"/><path d="M83 75 A24 24 0 0 1 117 75"/></g>
+</svg>

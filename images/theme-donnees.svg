@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Illustration du thème « donnees » : fleur à 8 pétales, symbole au cœur -->
+  <ellipse cx="100" cy="46" rx="24" ry="44" fill="#6d6e71" transform="rotate(0 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#b9babc" transform="rotate(45 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#6d6e71" transform="rotate(90 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#b9babc" transform="rotate(135 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#6d6e71" transform="rotate(180 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#b9babc" transform="rotate(225 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#6d6e71" transform="rotate(270 100 100)"/><ellipse cx="100" cy="46" rx="24" ry="44" fill="#b9babc" transform="rotate(315 100 100)"/>
+  <circle cx="100" cy="100" r="47" fill="#ffffff" stroke="#6d6e71" stroke-width="3"/>
+  <rect x="72" y="78" width="56" height="44" rx="3" fill="none" stroke="#6d6e71" stroke-width="4"/>
+  <rect x="72" y="78" width="56" height="12" fill="#6d6e71"/>
+  <g stroke="#6d6e71" stroke-width="3"><line x1="72" y1="101" x2="128" y2="101"/><line x1="72" y1="112" x2="128" y2="112"/><line x1="91" y1="78" x2="91" y2="122"/><line x1="110" y1="78" x2="110" y2="122"/></g>
+</svg>

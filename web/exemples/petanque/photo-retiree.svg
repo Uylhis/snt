@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <!-- Remplace une photo de personne réelle, retirée de la version publiée -->
+  <rect width="400" height="260" rx="12" fill="#f2f2f3" stroke="#b9babc" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="200" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#6d6e71">Photo retirée</text>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6d6e71">pour la publication (droit à l'image)</text>
+</svg>
