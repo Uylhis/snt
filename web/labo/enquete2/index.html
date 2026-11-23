@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Enquête 2 : trouver, se protéger, respecter – SNT Lycée Jean Favard</title>
+  <link rel="icon" type="image/svg+xml" href="../../../images/icone-snt.svg">
+  <link rel="stylesheet" href="../../../styles/style.css">
+</head>
+<body>
+  <header class="entete">
+    <a href="../../../index.html"><img src="../../../images/logo-lycee-snt.svg" alt="SNT – Lycée Jean Favard, retour à l'accueil"></a>
+    <a class="retour" href="../index.html">← Le labo HTTP</a>
+  </header>
+
+  <main class="contenu">
+    <div class="bandeau-theme">
+      <img src="../../../images/theme-web.svg" alt="">
+      <div>
+        <h1>Enquête 2 : trouver, se protéger, respecter</h1>
+        <p>Trois expériences pour comprendre les moteurs de recherche, les cookies et les droits sur les images. Les réponses se donnent dans Éléa.</p>
+      </div>
+    </div>
+
+    <!-- Expérience 1 : un mini-moteur de recherche sur 6 sites fictifs -->
+    <h2 id="moteur">Expérience 1 : le mini-moteur de recherche</h2>
+    <div class="carte">
+      <p>Voici un <strong>mini-Web</strong> de 6 sites fictifs. Un mini-moteur de recherche fonctionne comme un vrai :</p>
+      <ul>
+        <li><strong>Indexation</strong> : son robot ne lit que les <strong>mots-clés</strong> de chaque page, rangés dans la balise <code>&lt;meta name="keywords"&gt;</code>. Pour les voir : clic droit sur la page, puis <em>Afficher le code source de la page</em>.</li>
+        <li><strong>Classement</strong> : parmi les pages qui contiennent le mot-clé recherché, il affiche en premier celle qui reçoit le plus de <strong>liens venant des autres sites</strong> (liens entrants), comme le PageRank de Google.</li>
+      </ul>
+      <p>Ouvrez chaque site, notez ses mots-clés et les sites vers lesquels il fait un lien.</p>
+      <ul>
+        <li><a href="miniweb/mamie-crepe.html">Les crêpes de Mamie Jo</a></li>
+        <li><a href="miniweb/blog-sarrasin.html">Le blog du sarrasin</a></li>
+        <li><a href="miniweb/chandeleur-info.html">Chandeleur Info</a></li>
+        <li><a href="miniweb/cuisine-facile.html">Cuisine facile</a></li>
+        <li><a href="miniweb/velo-bretagne.html">Vélo en Bretagne</a></li>
+        <li><a href="miniweb/journal-du-port.html">Le Journal du Port</a></li>
+      </ul>
+      <p>Un internaute tape la requête <strong>crêpes</strong>. À vous de prévoir les résultats !</p>
+    </div>
+
+    <!-- Expérience 2 : une page qui dépose des cookies -->
+    <h2 id="cookies">Expérience 2 : la page qui dépose des cookies</h2>
+    <div class="carte">
+      <p>Ouvrez la page ci-dessous. Sans vous le dire, elle dépose un cookie dans votre navigateur. Retrouvez-le !</p>
+      <a class="bouton" href="cookies.html">Ouvrir la page aux cookies</a>
+    </div>
+
+    <!-- Expérience 3 : une galerie d'images sous différentes licences -->
+    <h2 id="licences">Expérience 3 : la galerie des licences</h2>
+    <div class="carte">
+      <p>Le lycée veut réutiliser des images trouvées sur le Web. Lisez la licence de chacune pour savoir ce qui est permis.</p>
+      <a class="bouton" href="licences.html">Ouvrir la galerie</a>
+    </div>
+  </main>
+</body>
+</html>
